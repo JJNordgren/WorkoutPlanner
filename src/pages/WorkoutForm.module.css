@@ -1,0 +1,119 @@
+.form {
+  background: var(--color-card);
+  border-radius: 12px;
+  padding: 1.25rem;
+  max-width: 680px;
+  margin: 0 auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.form input,
+.form select {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  margin-top: 0.25rem;
+  background: #fff;
+  color: #000;
+}
+
+.form .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 0.4rem 0;
+}
+
+.form .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.75rem;
+}
+
+.form button {
+  background: var(--color-accent);
+  border: 0;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+}
+
+.form .actions button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin: 0.6rem 0 1rem;
+  box-shadow: var(--shadow-soft);
+}
+.preview img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.preview h3 {
+  margin: 0 0 0.25rem;
+  color: var(--color-accent);
+}
+.preview p {
+  margin: 0.1rem 0;
+  color: var(--color-text-muted);
+}
+
+.backRow {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 0.75rem;
+}
+
+.backBtn {
+  background: #e5f2ff;
+  color: #0a4a6b;
+  border: 1px solid #b9e0ff;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.backBtn:hover {
+  background: #d6ecff;
+}
+.backBtn:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+.cancelBtn {
+  background: #eef2f7;
+  color: #1f2937;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+.cancelBtn:hover {
+  background: #e6ebf3;
+}

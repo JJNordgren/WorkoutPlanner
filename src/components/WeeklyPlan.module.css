@@ -1,0 +1,339 @@
+.wrapper {
+  margin-top: 1rem;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.range {
+  opacity: 0.85;
+}
+
+.headRight {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.viewToggle {
+  display: inline-flex;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.toggleBtn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0.35rem 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.toggleActive {
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) inset;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.node {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 0.75rem;
+}
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #8fb3d3;
+  box-shadow: 0 0 0 3px #ffffff inset, 0 0 0 2px rgba(0, 0, 0, 0.04);
+}
+
+.dotDone {
+  background: #2e7d32;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px #e7f3ea inset, 0 0 0 2px rgba(0, 0, 0, 0.04);
+}
+
+.line {
+  flex: 1 1 auto;
+  width: 2px;
+  background: linear-gradient(#cfe5f7, #cfe5f7);
+  margin: 6px 0;
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayTitle {
+  margin: 0;
+}
+
+.addBtn {
+  background: #24a148;
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+
+.empty {
+  opacity: 0.8;
+  margin: 0.25rem 0 0;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.name {
+  color: #0b4f79;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.name:hover {
+  color: #0a3e60;
+  text-decoration: underline;
+}
+
+.meta {
+  opacity: 0.9;
+}
+
+.cardActions {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.doneBtn {
+  background: #24a148;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+}
+
+.deleteBtn {
+  background: transparent;
+  color: #c62828;
+  border: 1px solid #e57373;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+
+.badge {
+  background: #e7f3ea;
+  color: #2e7d32;
+  border: 1px solid #b9e0c2;
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+  font-weight: 700;
+}
+
+.dayFooter {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.completeDayBtn {
+  background: #0b74de;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.completeDayBtn:disabled {
+  background: #bcd4f3;
+  cursor: not-allowed;
+}
+
+.helper {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: #4c6a84;
+}
+
+.calendar {
+  background: transparent;
+}
+
+.calHeader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0b4f79;
+}
+
+.calHeadCell {
+  text-align: center;
+}
+
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+}
+
+.calCell {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.calCellHead {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.calDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #8fb3d3;
+}
+
+.calDotDone {
+  background: #2e7d32;
+}
+
+.calTitle {
+  font-weight: 700;
+  color: #0b4f79;
+}
+
+.calAddBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+
+  flex: 0 0 auto;
+
+  padding: 0;
+  border: 0;
+  background: #22c55e;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.calAddBtn:hover {
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.calAddBtn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.calAddBtn:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+.calEmpty {
+  opacity: 0.7;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.calItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.calItemCard {
+  background: #f9fbff;
+  border: 1px solid #e3eef9;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+}
+
+.calItemTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.calFooter {
+  margin-top: 0.5rem;
+  text-align: center;
+}

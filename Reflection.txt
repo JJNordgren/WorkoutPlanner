@@ -1,0 +1,69 @@
+For this final project I built a workout tracking application focused on 
+helping to create a weekly routine at the gym. The application I made allows 
+for adding workouts to specific days, marking individual workouts as complete,
+and then completing the day, which contributes to a tracker on the top of the
+dashboard which shows the weekly workouts completed and the total workouts
+completed. I couldn't decide on whether to set it up as a timeline view for the
+workouts, or whether to set it up in a calendar view, so I ended up doing both,
+giving the user the option to swap to either. I also included preset workouts with
+image examples, and the ability to pull it up later for a reference. If the workout 
+the user wants isn't listed, they can create it themselves, but there won't be a
+reference image.
+
+Development Process:
+- I developed this application to be component first. I split the UI into reusable pieces, the header,
+logo, PageContent, WeeklyPlan, WorkoutForm, WorkoutDetail, and ContactForm. This kept my code more
+manageable and made styling changes much easier when I needed to apply them.
+
+- Live data: I used Firebase Realtime Database for storing workouts, users, and messages.
+Firebase also has built in functionality for authentication, so I went in and enabled
+email/password authentication and used that for my login processes for my service. Firebase
+allowed for me to store everything I needed to in the same place, as well as neatly organized
+the items that I stored.
+
+- Routing and gated CTAs: I did some personal research because I wanted to be able
+to change the page in realtime based on whether the user was logged in, and I discovered
+and utilized auth state to switch CTAs, allowing me to change the buttons for the home page
+and about page based on auth states. I also used React Router to keep my pages simple.
+
+Challenges:
+- Firebase setup: Getting the database paths organized, as well as setting up Firebase
+to use authentication took some research, but once I did I only had to create a couple of files,
+AuthContext.jsx and RequireAuth.jsx. There were resources online to help with that, but that process
+did take a while to figure out.
+
+- Workout completion logic: Originally, when I created a workout, then added a new workout, the day still showed
+as completed. I fixed this by flipping the day's status back to false upon adding a new workout.
+This introduced another problem of the counter for workouts possibly incrementing more than once for
+a day. I fixed this by adding a per-day "counted" flag underneath each week, so each day can only
+increment the workout counter once. Figuring out and edge-case testing my dashboard took the majority
+of my time for this assignment, and it is apparent by the size of those files.
+
+Lessons Learned:
+- I had some collisions with my css styling messing with other pages unintentionally, so this was a 
+good teacher that I need to keep my css styles scoped. Once I ironed out what I was doing, the CSS modules
+saved me from global collisions when tweaking buttons and layouts of different pages, 
+although this is a lesson I had to learn the hard way.
+
+Future Improvements
+- Reusable weekly schedules / templates: currently, when a week finishes, a new week 
+starts, and all workouts are wiped off the calendar. The workouts are stored in the
+database, but I have it set up to be accurate to the current date, so it moves to a 
+new week, which doesn't have any workouts made yet. In the future I would think about 
+creating a recurring routine, where the user can make a workout set, and it is applied 
+automatically to each new week, rather than having the user make a brand new one.
+
+- Scalability for different devices: My project currently is designed with a larger screen
+in mind, it is still functional on small screens, but the formatting is off. In the future 
+I would dedicate time to making this web page mobile friendly as well.
+
+- Reordering Workouts: In the future I would like to add drag and drop functionality to the 
+workouts, allowing the user to rearrange their daily workouts how they like if they wanted 
+to hit the workouts from top to bottom.
+
+Final Thoughts:
+I learned a lot doing this project. What we learned in class played a pivotal part in my
+ability to complete this application, but I also did a lot of outside research and learning 
+because I wanted to push myself to try some new things with this project. I played around
+with timelines and calendars, CTAs, and some logic I hadn't seen before, and I think it
+turned out pretty well for a first attempt. 

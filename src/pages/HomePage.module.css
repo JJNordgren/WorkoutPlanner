@@ -1,0 +1,126 @@
+.hero {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.title {
+  margin: 0.4rem 0 0.35rem;
+  font-size: clamp(1.7rem, 3.6vw, 2.4rem);
+  color: var(--color-accent);
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0 auto 1rem;
+  opacity: 0.92;
+  max-width: 60ch;
+}
+
+.ctaRow {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.8rem 0 0;
+}
+
+@media (max-width: 640px) {
+  .ctaRow {
+    grid-auto-flow: row;
+  }
+}
+
+.quickLinks {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  opacity: 0.9;
+}
+
+.quickLinks a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.quickLinks a:hover {
+  text-decoration: underline;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.ctaPrimary {
+  color: #0b1220;
+  background: linear-gradient(90deg, #1881ff, #22c55e);
+}
+
+.ctaSecondary {
+  color: #0b1220;
+  background: #e5eefc;
+  border: 1px solid #c5dbff;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem auto 1rem;
+  max-width: 1100px;
+}
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: 14px;
+  padding: 1rem 1rem 1.1rem;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+  margin: 0.1rem 0 0.35rem;
+  color: var(--color-accent);
+}
+
+.card p {
+  margin: 0 0 0.6rem;
+  opacity: 0.95;
+}
+
+.cardLink {
+  color: #6f98be;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+.microCta {
+  margin: 1.5rem auto 0;
+  max-width: 900px;
+  background: #eef6ff;
+  color: #0b1220;
+  border: 1px solid #cfe2ff;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.microCta p {
+  margin: 0 0 0.5rem;
+}

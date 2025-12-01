@@ -1,0 +1,10 @@
+.pageContent {
+  max-width: 70rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-accent);
+  margin: 0 0 1rem;
+}

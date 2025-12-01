@@ -1,0 +1,47 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.md {
+  font-size: 1.35rem;
+}
+.lg {
+  font-size: 1.6rem;
+}
+
+.habit {
+  color: var(--color-text);
+  opacity: 0.85;
+}
+
+.lift {
+  background: linear-gradient(90deg, #1881ff, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  color: #22c55e;
+  transform: translateY(0);
+  transition: transform 150ms ease, opacity 150ms ease;
+  opacity: 0.9;
+}
+
+.logo:hover .icon {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.logo:hover .habit {
+  opacity: 1;
+}
