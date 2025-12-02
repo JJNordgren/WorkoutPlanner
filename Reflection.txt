@@ -17,7 +17,7 @@ manageable and made styling changes much easier when I needed to apply them.
 
 - Live data: I used Firebase Realtime Database for storing workouts, users, and messages.
 Firebase also has built in functionality for authentication, so I went in and enabled
-email/password authentication and used that for my login processes for my service. Firebase
+email/password authentication and used that for my login processes for my application. Firebase
 allowed for me to store everything I needed to in the same place, as well as neatly organized
 the items that I stored.
 
@@ -41,9 +41,17 @@ of my time for this assignment, and it is apparent by the size of those files.
 
 Lessons Learned:
 - I had some collisions with my css styling messing with other pages unintentionally, so this was a 
-good teacher that I need to keep my css styles scoped. Once I ironed out what I was doing, the CSS modules
-saved me from global collisions when tweaking buttons and layouts of different pages, 
-although this is a lesson I had to learn the hard way.
+good teacher that I need to keep my css styles scoped rather than globally set for the most part.
+Once I ironed out what I was doing, the CSS modules saved me from global collisions when tweaking 
+buttons and layouts of different pages, although this is a lesson I had to learn the hard way.
+
+- This project really hammered in that small components scale better. Breaking the UI into smaller, 
+focused pieces helped immensely with removing redundancy and making styling less painful.
+
+- Once again I was saved by console logs at times when I couldn't figure out why my code 
+wasn't behaving as expected, particularly with the contact page and figuring out my issues
+with having my workout completed counter incrementing unintentionally.
+
 
 Future Improvements
 - Reusable weekly schedules / templates: currently, when a week finishes, a new week 
